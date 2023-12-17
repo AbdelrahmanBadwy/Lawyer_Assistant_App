@@ -34,7 +34,7 @@ void loginAndSignUpDialog::on_loginButton_clicked()
 {
     if(ui->stackedWidget->currentIndex() == 0)
     {
-        //performLogin(ui->emailTextEditLogIn->toPlainText(),ui->passwordLineEditLogIn->text());
+        //performLogin(ui->emailLineEditLogIn->text(),ui->passwordLineEditLogIn->text());
     }
     else
     {
@@ -74,12 +74,12 @@ void loginAndSignUpDialog::on_comboBox_currentIndexChanged(int index)
     if(ui->comboBox->currentIndex() == 0)
     {
         ui->supervisorLabel->setVisible(true);
-        ui->supervisorTextEdit->setVisible(true);
+        ui->supervisorLineEdit->setVisible(true);
     }
     else
     {
         ui->supervisorLabel->setVisible(false);
-        ui->supervisorTextEdit->setVisible(false);
+        ui->supervisorLineEdit->setVisible(false);
     }
 }
 

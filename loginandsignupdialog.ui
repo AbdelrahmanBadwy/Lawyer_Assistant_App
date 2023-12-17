@@ -44,6 +44,9 @@
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <layout class="QVBoxLayout" name="emailVLayoutLogIn">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
         <item>
          <widget class="QLabel" name="emailLabelLogIn">
           <property name="sizePolicy">
@@ -67,19 +70,10 @@
           <property name="text">
            <string>Email</string>
           </property>
-          <property name="buddy">
-           <cstring>emailTextEditLogIn</cstring>
-          </property>
          </widget>
         </item>
         <item>
-         <widget class="QTextEdit" name="emailTextEditLogIn">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
+         <widget class="QLineEdit" name="emailLineEditLogIn">
           <property name="minimumSize">
            <size>
             <width>221</width>
@@ -183,13 +177,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QTextEdit" name="firstNameEdit">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
+         <widget class="QLineEdit" name="firstNameLineEdit">
           <property name="minimumSize">
            <size>
             <width>221</width>
@@ -234,13 +222,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QTextEdit" name="lastNameTextEdit">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
+         <widget class="QLineEdit" name="lastNameLineEdit">
           <property name="minimumSize">
            <size>
             <width>221</width>
@@ -285,13 +267,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QTextEdit" name="emailTextEditSignUp">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
+         <widget class="QLineEdit" name="emailTextEditSignUp">
           <property name="minimumSize">
            <size>
             <width>221</width>
@@ -463,13 +439,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QTextEdit" name="supervisorTextEdit">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
+         <widget class="QLineEdit" name="supervisorLineEdit">
           <property name="minimumSize">
            <size>
             <width>221</width>
