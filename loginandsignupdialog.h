@@ -20,6 +20,9 @@ private slots:
 
     void on_signUpButton_clicked();
 
+
+    void on_comboBox_currentIndexChanged(int index);
+
 private:
     Ui::loginAndSignUpDialog *ui;
 };
